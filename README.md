@@ -32,6 +32,10 @@ Shell facilement personnalisable et assez rapide.
 
 Compositeur pour X.
 
+### razer-cli
+
+J'utilise une souris razer. Ses couleurs vont s'adapter à partir de celles choisies par pywall.
+
 ## Polices
 
 Plusieurs policies sont utilisées à différents endroits dans les fichiers de configuation.
