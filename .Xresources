@@ -1,0 +1,15 @@
+!URxvt.font: xft:JetbrainsMono:size=12
+!URxvt.font: xft:JetbrainsMono Nerd Font:size=15:sytle=medium:autohint=true
+URxvt.font: xft:JetbrainsMono Nerd Font Mono:size=15:autohint=true
+URxvt*letterSpace: 1
+
+URxvt.perl-ext-common:  resize-font
+URxvt.keysym.C-plus:      resize-font:reset
+URxvt.keysym.C-equal:     resize-font:bigger
+
+URxvt*transparent: true
+URxvt*shading: 10
+
+URxvt.scrollBar: false
+
+URxvt.internalBorder: 40 
