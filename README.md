@@ -20,9 +20,14 @@ Barre de statut extensible permettant principalement de gérer les différents e
 
 Outil de gestion des arrières plans. Utilise les couleurs d'une image pour définir les couleurs de l'environnement.
 
-### Alacritty
+### Alacritty (Non utilisé)
 
 Supposément le terminal le plus rapide à l'affichage puisqu'il utilise l'accélération graphique. Ça ne semble pas être le plus rapide à lancer.
+J'utilises maintenant urxvt, mais je conserve la configuration au cas où.
+
+### rxvt-unicode (urxvt)
+
+Terminal que j'utilises. C'est le terminal qui se lance le plus rapidement, et il utilise directement les couleurs du système.
 
 ### fish
 
