@@ -56,7 +56,8 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec "env WAYLAND_DISPLAY= alacritty"
+#bindsym $mod+Return exec "env WAYLAND_DISPLAY= alacritty"
+bindsym $mod+Return exec "urxvt"
 
 # kill focused window
 bindsym $mod+Shift+q kill
