@@ -1,4 +1,4 @@
-# rice
+# dot-files
 
 Configuration de mon environnement linux personnel.
 
@@ -16,11 +16,11 @@ Menu servant à lancer les application. Peut être lancé avec Super+d.
 
 Barre de statut extensible permettant principalement de gérer les différents environnements virtuels.
 
-### pywall
+### pywal
 
 Outil de gestion des arrières plans. Utilise les couleurs d'une image pour définir les couleurs de l'environnement. Attention d'installer manuellement (git), puisque l'option `--recursive` n'est pas encore disponible dans la version déployée sur pip.
 
-Le gestionnaire de couleurs `colorthief` doit aussi être installé.
+Le gestionnaire de couleurs `haishoku` doit aussi être installé.
 
 ### Alacritty (Non utilisé)
 
