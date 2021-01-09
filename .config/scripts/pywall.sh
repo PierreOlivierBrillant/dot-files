@@ -1,3 +1,3 @@
 #!/bin/bash
-/home/pobrillant/.local/bin/wal -i /home/pobrillant/code/wp/ --recursive --backend colorthief &&
+${HOME}/.local/bin/wal -i ${HOME}/code/wp/ --recursive --backend colorthief &&
 razer-cli -a
