@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Pywal Startup
+GenericName=Start pywal on systems that support .desktop
+Exec=~/.config/script/pywal.sh
+Terminal=false
+Type=Application
+X-GNOME-Autostart-enabled=true
