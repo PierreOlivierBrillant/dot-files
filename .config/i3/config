@@ -42,8 +42,8 @@ bindsym XF86MonBrightnessUp exec --no-startup-id "brightnessctl set +10%"
 # Variety Background manager
 # exec --no-startup-id variety
 
-#Compton
-exec --no-startup-id "compton --config ~/.config/picom/picom.conf --experimental-backends"
+#Picom (compositor)
+exec --no-startup-id "picom --config ~/.config/picom/picom.conf --experimental-backends"
 
 #exec_always --no-startup-id $HOME/.config/startup.sh
 #exec_always --no-startup-id wal -i ~/code/wp/ --recursive --backend colorthief 
@@ -56,7 +56,7 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec "env WAYLAND_DISPLAY= alacritty"
-bindsym $mod+Return exec "urxvt"
+bindsym $mod+Return exec "alacritty"
 
 # kill focused window
 bindsym $mod+Shift+q kill
