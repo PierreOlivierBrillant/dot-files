@@ -35,7 +35,7 @@ Terminal que j'utilises. C'est le terminal qui se lance le plus rapidement, et i
 
 Shell facilement personnalisable et assez rapide.
 
-### compton
+### picom
 
 Compositeur pour X.
 
