@@ -3,3 +3,5 @@
 	email = pierreolivierbrillant@gmail.com
 [core]
 	autocrlf = input
+[init]
+	defaultBranch = main
