@@ -56,7 +56,8 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec "env WAYLAND_DISPLAY= alacritty"
-bindsym $mod+Return exec "alacritty"
+exec "xrdb -merge -quiet $HOME/.cache/wal/colors.Xressources"
+bindsym $mod+Return exec "alacritty && xrdb -merge -quiet"
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -69,7 +70,7 @@ bindsym $mod+Shift+q kill
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # start rofi
-bindsym $mod+d exec --no-startup-id "rofi -combi-modi window,drun,ssh icon-theme \\"Papirus\\" -show-icons -show combi -run-shell-command '{terminal} -e \\" {cmd}; read -n 1 -s\\"'"
+bindsym $mod+d exec --no-startup-id "rofi -combi-modi drun icon-theme \\"Papirus\\" -show-icons -show combi -run-shell-command '{terminal} -e \\" {cmd}; read -n 1 -s\\"'"
 
 # Start keyring
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
@@ -238,3 +239,5 @@ client.unfocused        $fc     $bl     $fc  $bl       $bl
 client.urgent           $bl     $bl     $bl  $bl       $bl
 client.placeholder      $fc     $bl     $bl  $bl       $bl
 client.background       $fc     $bl     $bl  $bl       $bl
+
+exec --no-startup-id playerctld daemon
