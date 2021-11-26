@@ -19,5 +19,3 @@ fi
 
 echo "Polybar launched..."
 
-/home/pobrillant/.config/scripts/pywall.sh
-

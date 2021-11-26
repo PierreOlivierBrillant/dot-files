@@ -54,8 +54,10 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# start pywal
+exec_always --no-startup-id "$HOME/.local/bin/wal -i $HOME/code/wp/ --recursive --backend colorz --saturate 0.95 -o $HOME/.config/wal/done.sh"
+
 # start a terminal
-#bindsym $mod+Return exec "env WAYLAND_DISPLAY= alacritty"
 exec "xrdb -merge -quiet $HOME/.cache/wal/colors.Xressources"
 bindsym $mod+Return exec "alacritty && xrdb -merge -quiet"
 
@@ -204,7 +206,7 @@ bindsym $mod+r mode "resize"
 #}
 
 # Disable windows title for i3-gaps
-for_window [class="^.*"] border pixel 3 
+for_window [class="^.*"] border pixel 1 
 
 gaps inner 20
 
