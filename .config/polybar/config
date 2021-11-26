@@ -62,7 +62,7 @@ font-2 = Siji:pixelsize=15;1
 
 modules-left = i3
 modules-center = date
-modules-right = spotify spotify-prev spotify-play-pause spotify-next  battery pulseaudio powermenu
+modules-right = battery pulseaudio powermenu
 
 locale = fr_CA.UTF-8
 
