@@ -33,20 +33,15 @@ exec --no-startup-id nm-applet
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 bindsym XF86MonBrightnessDown exec --no-startup-id "brightnessctl set 10%-"
 bindsym XF86MonBrightnessUp exec --no-startup-id "brightnessctl set +10%"
 
-# Variety Background manager
-# exec --no-startup-id variety
+# Display setup
+exec_always --no-startup-id "autorandr --change"
 
 #Picom (compositor)
 exec --no-startup-id "picom --config ~/.config/picom/picom.conf --experimental-backends"
-
-#exec_always --no-startup-id $HOME/.config/startup.sh
-#exec_always --no-startup-id wal -i ~/code/wp/ --recursive --backend colorthief 
 
 # Start polybar 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
@@ -58,7 +53,6 @@ floating_modifier $mod
 exec_always --no-startup-id "$HOME/.local/bin/wal -i $HOME/code/wp/ --recursive --backend colorz --saturate 0.95 -o $HOME/.config/wal/done.sh"
 
 # start a terminal
-exec "xrdb -merge -quiet $HOME/.cache/wal/colors.Xressources"
 bindsym $mod+Return exec "alacritty && xrdb -merge -quiet"
 
 # kill focused window
@@ -217,9 +211,6 @@ smart_gaps on
 bindsym $mod+plus gaps inner all plus 5
 bindsym $mod+minus gaps inner all minus 5
 
-# Dual monitor configuration
-exec --no-startup-id /home/pobrillant/.config/scripts/display.sh 
-
 # Use pywall colors
 
 # Set colors from Xresources
@@ -241,5 +232,3 @@ client.unfocused        $fc     $bl     $fc  $bl       $bl
 client.urgent           $bl     $bl     $bl  $bl       $bl
 client.placeholder      $fc     $bl     $bl  $bl       $bl
 client.background       $fc     $bl     $bl  $bl       $bl
-
-exec --no-startup-id playerctld daemon
