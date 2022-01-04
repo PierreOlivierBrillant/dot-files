@@ -193,6 +193,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Redshift
+exec --no-startup-id redshift-gtk
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 #bar {
@@ -232,3 +235,4 @@ client.unfocused        $fc     $bl     $fc  $bl       $bl
 client.urgent           $bl     $bl     $bl  $bl       $bl
 client.placeholder      $fc     $bl     $bl  $bl       $bl
 client.background       $fc     $bl     $bl  $bl       $bl
+
